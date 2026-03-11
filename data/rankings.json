@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-03-11T21:25:33.172553+00:00",
+  "total_users": 5,
+  "rankings": [
+    {
+      "login": "ktauchathuranga",
+      "name": "Ashen Chathuranga",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79928743?u=2aec053843d9b7af97aada918dac625724e29293&v=4",
+      "bio": "i code & build stuff | \ud83c\uddf5\ud83c\uddf8",
+      "company": "",
+      "website": "https://ktauchathuranga.github.io",
+      "location": "Sri Lanka",
+      "followers": 24,
+      "commits_this_year": 1235,
+      "prs_this_year": 137,
+      "issues_this_year": 162,
+      "total_stars": 59,
+      "public_repos": 66,
+      "repos_contributed_to": 48,
+      "top_languages": [
+        "JavaScript",
+        "Python",
+        "Shell"
+      ],
+      "score": 4974,
+      "github_url": "https://github.com/ktauchathuranga",
+      "rank": 1
+    },
+    {
+      "login": "chapayev0",
+      "name": "Dilahara MMS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41099408?u=a8b4d64531749f4518b843c1050c45bedf6fca35&v=4",
+      "bio": "Passionate software developer | Building clean, efficient web & software solutions | Skilled in full-stack development & digital strategy | Lifelong learner",
+      "company": "@CodeLab-Systems",
+      "website": "",
+      "location": "Its All in The Clouds",
+      "followers": 2,
+      "commits_this_year": 140,
+      "prs_this_year": 0,
+      "issues_this_year": 0,
+      "total_stars": 0,
+      "public_repos": 26,
+      "repos_contributed_to": 12,
+      "top_languages": [
+        "Python",
+        "PHP",
+        "JavaScript"
+      ],
+      "score": 422,
+      "github_url": "https://github.com/chapayev0",
+      "rank": 2
+    },
+    {
+      "login": "SLUICEPRJCT",
+      "name": "SLUICEPRJCT",
+      "avatar_url": "https://avatars.githubusercontent.com/u/141854698?v=4",
+      "bio": "",
+      "company": "",
+      "website": "",
+      "location": "",
+      "followers": 1,
+      "commits_this_year": 0,
+      "prs_this_year": 0,
+      "issues_this_year": 0,
+      "total_stars": 0,
+      "public_repos": 1,
+      "repos_contributed_to": 0,
+      "top_languages": [
+        "Python"
+      ],
+      "score": 1,
+      "github_url": "https://github.com/SLUICEPRJCT",
+      "rank": 3
+    },
+    {
+      "login": "prasadrandombage",
+      "name": "Chathura Randombage",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132922856?u=b6b3ce2cbecf49107de49bfe3d7b9c5f639ee4f2&v=4",
+      "bio": "\ud83d\udcdd Crafting elegant solutions one algorithm at a time \u2699\ufe0f",
+      "company": "",
+      "website": "",
+      "location": "",
+      "followers": 0,
+      "commits_this_year": 0,
+      "prs_this_year": 0,
+      "issues_this_year": 0,
+      "total_stars": 0,
+      "public_repos": 2,
+      "repos_contributed_to": 0,
+      "top_languages": [
+        "PHP"
+      ],
+      "score": 0,
+      "github_url": "https://github.com/prasadrandombage",
+      "rank": 4
+    },
+    {
+      "login": "mihos",
+      "name": "Mihos",
+      "avatar_url": "https://avatars.githubusercontent.com/u/147377757?u=285c28a5fa13226b27ac6c37bbca5298063aa610&v=4",
+      "bio": "student | newbie programmer",
+      "company": "",
+      "website": "",
+      "location": "Sri Lanka",
+      "followers": 0,
+      "commits_this_year": 0,
+      "prs_this_year": 0,
+      "issues_this_year": 0,
+      "total_stars": 0,
+      "public_repos": 1,
+      "repos_contributed_to": 0,
+      "top_languages": [],
+      "score": 0,
+      "github_url": "https://github.com/mihos",
+      "rank": 5
+    }
+  ]
+}
