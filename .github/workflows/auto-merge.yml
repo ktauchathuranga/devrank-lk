@@ -53,17 +53,27 @@ jobs:
               if not isinstance(data, list):
                   raise ValueError("The JSON file must contain a list array [] at the root.")
                   
-              # Rule 2: If it is an object, it must have a "github" key
+              seen_usernames = set()
+              
+              # Rule 2: Validation and Duplicate Check
               for item in data:
                   if isinstance(item, dict) and "github" not in item:
                       raise ValueError("Every user object must have a \"github\" key.")
+                  
+                  # Extract the username and make it lowercase for a true comparison
+                  username = item["github"].lower() if isinstance(item, dict) else item.lower()
+                  
+                  # Rule 3: Check for duplicates
+                  if username in seen_usernames:
+                      raise ValueError(f"Duplicate username found: {username}. Users can only be added once.")
+                  
+                  seen_usernames.add(username)
                       
               print("✅ JSON validation passed!")
           except Exception as e:
               print(f"❌ JSON Validation Failed: {e}")
               # Exiting with code 1 fails the GitHub Action, preventing the merge
               sys.exit(1)
-          '
 
       - name: Auto-merge PR
         env:
