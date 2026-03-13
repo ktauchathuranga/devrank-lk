@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-13T18:13:17.804058+00:00",
-  "total_users": 19,
+  "generated_at": "2026-03-13T18:16:55.443394+00:00",
+  "total_users": 20,
   "rankings": [
     {
       "login": "sameerasw",
@@ -35,7 +35,7 @@
       "website": "https://ktauchathuranga.github.io",
       "location": "Sri Lanka",
       "followers": 26,
-      "commits_this_year": 1256,
+      "commits_this_year": 1257,
       "prs_this_year": 137,
       "issues_this_year": 165,
       "total_stars": 61,
@@ -46,7 +46,7 @@
         "Python",
         "Shell"
       ],
-      "score": 5053,
+      "score": 5056,
       "github_url": "https://github.com/ktauchathuranga",
       "rank": 2
     },
@@ -383,6 +383,26 @@
       "rank": 16
     },
     {
+      "login": "Perera-KD",
+      "name": "Kylie Perera",
+      "avatar_url": "https://avatars.githubusercontent.com/u/184366614?u=ab264a36b6980d0c7c74b2fc39333130fb1e495d&v=4",
+      "bio": "",
+      "company": "",
+      "website": "",
+      "location": "",
+      "followers": 0,
+      "commits_this_year": 1,
+      "prs_this_year": 1,
+      "issues_this_year": 0,
+      "total_stars": 0,
+      "public_repos": 0,
+      "repos_contributed_to": 1,
+      "top_languages": [],
+      "score": 8,
+      "github_url": "https://github.com/Perera-KD",
+      "rank": 17
+    },
+    {
       "login": "SLUICEPRJCT",
       "name": "SLUICEPRJCT",
       "avatar_url": "https://avatars.githubusercontent.com/u/141854698?v=4",
@@ -402,7 +422,7 @@
       ],
       "score": 1,
       "github_url": "https://github.com/SLUICEPRJCT",
-      "rank": 17
+      "rank": 18
     },
     {
       "login": "prasadrandombage",
@@ -424,7 +444,7 @@
       ],
       "score": 0,
       "github_url": "https://github.com/prasadrandombage",
-      "rank": 18
+      "rank": 19
     },
     {
       "login": "mihos",
@@ -444,7 +464,7 @@
       "top_languages": [],
       "score": 0,
       "github_url": "https://github.com/mihos",
-      "rank": 19
+      "rank": 20
     }
   ]
 }
