@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-14T13:07:57.810974+00:00",
-  "total_users": 21,
+  "generated_at": "2026-03-22T00:37:18.211922+00:00",
+  "total_users": 24,
   "rankings": [
     {
       "login": "sameerasw",
@@ -10,11 +10,11 @@
       "company": "@zone24x7",
       "website": "https://sameerasw.com",
       "location": "Sri Lanka",
-      "followers": 479,
-      "commits_this_year": 6412,
-      "prs_this_year": 245,
-      "issues_this_year": 100,
-      "total_stars": 3679,
+      "followers": 491,
+      "commits_this_year": 6281,
+      "prs_this_year": 242,
+      "issues_this_year": 102,
+      "total_stars": 3792,
       "public_repos": 80,
       "repos_contributed_to": 42,
       "top_languages": [
@@ -22,7 +22,7 @@
         "Java",
         "Kotlin"
       ],
-      "score": 35856,
+      "score": 35916,
       "github_url": "https://github.com/sameerasw",
       "rank": 1
     },
@@ -35,18 +35,18 @@
       "website": "https://ktauchathuranga.github.io",
       "location": "Sri Lanka",
       "followers": 26,
-      "commits_this_year": 1260,
-      "prs_this_year": 137,
-      "issues_this_year": 166,
-      "total_stars": 62,
+      "commits_this_year": 1261,
+      "prs_this_year": 135,
+      "issues_this_year": 176,
+      "total_stars": 64,
       "public_repos": 67,
-      "repos_contributed_to": 49,
+      "repos_contributed_to": 48,
       "top_languages": [
         "JavaScript",
         "Python",
         "Shell"
       ],
-      "score": 5071,
+      "score": 5092,
       "github_url": "https://github.com/ktauchathuranga",
       "rank": 2
     },
@@ -55,22 +55,22 @@
       "name": "Minoka Wickramasinghe",
       "avatar_url": "https://avatars.githubusercontent.com/u/76654300?u=6954ce843d3bc095a5d125303b0a96744bca17bf&v=4",
       "bio": "BICT student at University of Ruhuna.\r\nA self learning Full stack developer & Game Developer. \r\n",
-      "company": "",
-      "website": "https://www.linkedin.com/in/minoka-wickramasinghe-3b7198194/",
+      "company": "Aurion",
+      "website": "https://minokainduwara.fwh.is",
       "location": "Kegalle",
       "followers": 24,
-      "commits_this_year": 410,
-      "prs_this_year": 37,
-      "issues_this_year": 22,
-      "total_stars": 52,
-      "public_repos": 49,
-      "repos_contributed_to": 35,
+      "commits_this_year": 454,
+      "prs_this_year": 40,
+      "issues_this_year": 36,
+      "total_stars": 108,
+      "public_repos": 52,
+      "repos_contributed_to": 38,
       "top_languages": [
         "C++",
         "HTML",
-        "JavaScript"
+        "Java"
       ],
-      "score": 1691,
+      "score": 2090,
       "github_url": "https://github.com/Minokainduwara",
       "rank": 3
     },
@@ -85,8 +85,8 @@
       "followers": 3,
       "commits_this_year": 376,
       "prs_this_year": 91,
-      "issues_this_year": 41,
-      "total_stars": 4,
+      "issues_this_year": 35,
+      "total_stars": 5,
       "public_repos": 13,
       "repos_contributed_to": 13,
       "top_languages": [
@@ -94,33 +94,9 @@
         "JavaScript",
         "Go"
       ],
-      "score": 1684,
+      "score": 1676,
       "github_url": "https://github.com/Dineshs737",
       "rank": 4
-    },
-    {
-      "login": "Pasindu-Jayasundara",
-      "name": "Pasindu Jayasundara ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/158612501?u=64d58581c9bbbbd1277d383b8418ee9ffbe48d78&v=4",
-      "bio": "",
-      "company": "",
-      "website": "",
-      "location": "Sri Lanka",
-      "followers": 13,
-      "commits_this_year": 410,
-      "prs_this_year": 51,
-      "issues_this_year": 10,
-      "total_stars": 25,
-      "public_repos": 88,
-      "repos_contributed_to": 39,
-      "top_languages": [
-        "Java",
-        "JavaScript",
-        "TypeScript"
-      ],
-      "score": 1618,
-      "github_url": "https://github.com/Pasindu-Jayasundara",
-      "rank": 5
     },
     {
       "login": "dilushamadushan",
@@ -131,8 +107,8 @@
       "website": "",
       "location": "",
       "followers": 8,
-      "commits_this_year": 388,
-      "prs_this_year": 73,
+      "commits_this_year": 400,
+      "prs_this_year": 76,
       "issues_this_year": 3,
       "total_stars": 13,
       "public_repos": 30,
@@ -142,9 +118,81 @@
         "Java",
         "HTML"
       ],
-      "score": 1595,
+      "score": 1646,
       "github_url": "https://github.com/dilushamadushan",
+      "rank": 5
+    },
+    {
+      "login": "Pasindu-Jayasundara",
+      "name": "Pasindu Jayasundara ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/158612501?u=64d58581c9bbbbd1277d383b8418ee9ffbe48d78&v=4",
+      "bio": "",
+      "company": "",
+      "website": "",
+      "location": "Sri Lanka",
+      "followers": 13,
+      "commits_this_year": 414,
+      "prs_this_year": 53,
+      "issues_this_year": 10,
+      "total_stars": 25,
+      "public_repos": 89,
+      "repos_contributed_to": 38,
+      "top_languages": [
+        "Java",
+        "JavaScript",
+        "HTML"
+      ],
+      "score": 1640,
+      "github_url": "https://github.com/Pasindu-Jayasundara",
       "rank": 6
+    },
+    {
+      "login": "lahirunirmalx",
+      "name": "Lahiru",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102464406?u=6c5e50ed5a4c97b57b0ece6bc3e31284116f8296&v=4",
+      "bio": "dad - write crappy code on Github",
+      "company": "OrangeHRM",
+      "website": "https://lahirunirmalx.netlify.app/",
+      "location": "Colombo,Srilanka",
+      "followers": 7,
+      "commits_this_year": 250,
+      "prs_this_year": 87,
+      "issues_this_year": 0,
+      "total_stars": 42,
+      "public_repos": 39,
+      "repos_contributed_to": 24,
+      "top_languages": [
+        "C++",
+        "PHP",
+        "TypeScript"
+      ],
+      "score": 1360,
+      "github_url": "https://github.com/lahirunirmalx",
+      "rank": 7
+    },
+    {
+      "login": "MohamedSharfan",
+      "name": "Sharfan Saleem",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182746015?u=10abf6acb2d4f13bccd9ecfd5d5d8acceb4012b6&v=4",
+      "bio": "Python developer | Open source contributor | GSoC 2026 aspirant",
+      "company": "university of ruhuna",
+      "website": "https://mohamedsharfan.github.io/myPortfolio/",
+      "location": "kandy",
+      "followers": 2,
+      "commits_this_year": 309,
+      "prs_this_year": 43,
+      "issues_this_year": 9,
+      "total_stars": 3,
+      "public_repos": 25,
+      "repos_contributed_to": 27,
+      "top_languages": [
+        "Python",
+        "JavaScript",
+        "CSS"
+      ],
+      "score": 1174,
+      "github_url": "https://github.com/MohamedSharfan",
+      "rank": 8
     },
     {
       "login": "bdhamithkumara",
@@ -168,7 +216,31 @@
       ],
       "score": 1075,
       "github_url": "https://github.com/bdhamithkumara",
-      "rank": 7
+      "rank": 9
+    },
+    {
+      "login": "ishansivmal",
+      "name": "T.M.I. Sivmal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164498170?u=5bcf8f8ee1675c1e7ddba37666c53fdc51844f7f&v=4",
+      "bio": "Undergraduate student from University of Ruhuna ",
+      "company": "",
+      "website": "",
+      "location": "matara",
+      "followers": 8,
+      "commits_this_year": 196,
+      "prs_this_year": 48,
+      "issues_this_year": 0,
+      "total_stars": 22,
+      "public_repos": 8,
+      "repos_contributed_to": 10,
+      "top_languages": [
+        "JavaScript",
+        "TypeScript",
+        "Java"
+      ],
+      "score": 924,
+      "github_url": "https://github.com/ishansivmal",
+      "rank": 10
     },
     {
       "login": "pawanthathsara987",
@@ -180,7 +252,7 @@
       "location": "",
       "followers": 1,
       "commits_this_year": 231,
-      "prs_this_year": 28,
+      "prs_this_year": 29,
       "issues_this_year": 0,
       "total_stars": 2,
       "public_repos": 20,
@@ -190,9 +262,9 @@
         "CSS",
         "EJS"
       ],
-      "score": 842,
+      "score": 847,
       "github_url": "https://github.com/pawanthathsara987",
-      "rank": 8
+      "rank": 11
     },
     {
       "login": "RasheedhulMuneer1",
@@ -216,31 +288,7 @@
       ],
       "score": 822,
       "github_url": "https://github.com/RasheedhulMuneer1",
-      "rank": 9
-    },
-    {
-      "login": "ishansivmal",
-      "name": "T.M.I. Sivmal",
-      "avatar_url": "https://avatars.githubusercontent.com/u/164498170?u=5bcf8f8ee1675c1e7ddba37666c53fdc51844f7f&v=4",
-      "bio": "Undergraduate student from University of Ruhuna ",
-      "company": "",
-      "website": "",
-      "location": "matara",
-      "followers": 5,
-      "commits_this_year": 164,
-      "prs_this_year": 36,
-      "issues_this_year": 0,
-      "total_stars": 19,
-      "public_repos": 8,
-      "repos_contributed_to": 10,
-      "top_languages": [
-        "JavaScript",
-        "TypeScript",
-        "Java"
-      ],
-      "score": 753,
-      "github_url": "https://github.com/ishansivmal",
-      "rank": 10
+      "rank": 12
     },
     {
       "login": "bl4ckf0xk",
@@ -252,7 +300,7 @@
       "location": "Sri Lanka",
       "followers": 17,
       "commits_this_year": 194,
-      "prs_this_year": 11,
+      "prs_this_year": 12,
       "issues_this_year": 1,
       "total_stars": 0,
       "public_repos": 30,
@@ -262,9 +310,9 @@
         "Assembly",
         "TypeScript"
       ],
-      "score": 656,
+      "score": 661,
       "github_url": "https://github.com/bl4ckf0xk",
-      "rank": 11
+      "rank": 13
     },
     {
       "login": "thidaskaveesha",
@@ -275,20 +323,20 @@
       "website": "https://www.thidaskaveesha.42web.io",
       "location": "Sri Lanka",
       "followers": 19,
-      "commits_this_year": 147,
+      "commits_this_year": 148,
       "prs_this_year": 12,
       "issues_this_year": 5,
-      "total_stars": 25,
-      "public_repos": 62,
-      "repos_contributed_to": 31,
+      "total_stars": 24,
+      "public_repos": 64,
+      "repos_contributed_to": 32,
       "top_languages": [
         "Python",
         "JavaScript",
         "C#"
       ],
-      "score": 630,
+      "score": 629,
       "github_url": "https://github.com/thidaskaveesha",
-      "rank": 12
+      "rank": 14
     },
     {
       "login": "randil-h",
@@ -299,20 +347,20 @@
       "website": "",
       "location": "",
       "followers": 7,
-      "commits_this_year": 135,
+      "commits_this_year": 133,
       "prs_this_year": 7,
       "issues_this_year": 0,
       "total_stars": 0,
       "public_repos": 25,
-      "repos_contributed_to": 16,
+      "repos_contributed_to": 15,
       "top_languages": [
         "JavaScript",
         "Java",
         "Jupyter Notebook"
       ],
-      "score": 447,
+      "score": 441,
       "github_url": "https://github.com/randil-h",
-      "rank": 13
+      "rank": 15
     },
     {
       "login": "chapayev0",
@@ -323,7 +371,7 @@
       "website": "",
       "location": "Its All in The Clouds",
       "followers": 2,
-      "commits_this_year": 141,
+      "commits_this_year": 142,
       "prs_this_year": 0,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -334,9 +382,9 @@
         "PHP",
         "JavaScript"
       ],
-      "score": 425,
+      "score": 428,
       "github_url": "https://github.com/chapayev0",
-      "rank": 14
+      "rank": 16
     },
     {
       "login": "Bl4ke100",
@@ -347,7 +395,7 @@
       "website": "",
       "location": "",
       "followers": 4,
-      "commits_this_year": 113,
+      "commits_this_year": 115,
       "prs_this_year": 7,
       "issues_this_year": 1,
       "total_stars": 0,
@@ -358,9 +406,9 @@
         "HTML",
         "TypeScript"
       ],
-      "score": 380,
+      "score": 386,
       "github_url": "https://github.com/Bl4ke100",
-      "rank": 15
+      "rank": 17
     },
     {
       "login": "abdrhxyii",
@@ -384,7 +432,31 @@
       ],
       "score": 171,
       "github_url": "https://github.com/abdrhxyii",
-      "rank": 16
+      "rank": 18
+    },
+    {
+      "login": "AKMJafran",
+      "name": "AK. Mohamed Jafran",
+      "avatar_url": "https://avatars.githubusercontent.com/u/165194106?u=34ea30bb6ac471ad1f8ff85f4ef1e81132494ed2&v=4",
+      "bio": "",
+      "company": "",
+      "website": "",
+      "location": "",
+      "followers": 1,
+      "commits_this_year": 31,
+      "prs_this_year": 5,
+      "issues_this_year": 0,
+      "total_stars": 0,
+      "public_repos": 12,
+      "repos_contributed_to": 8,
+      "top_languages": [
+        "HTML",
+        "Java",
+        "CSS"
+      ],
+      "score": 119,
+      "github_url": "https://github.com/AKMJafran",
+      "rank": 19
     },
     {
       "login": "Perera-KD",
@@ -395,36 +467,40 @@
       "website": "",
       "location": "",
       "followers": 0,
-      "commits_this_year": 19,
+      "commits_this_year": 21,
       "prs_this_year": 1,
       "issues_this_year": 0,
       "total_stars": 0,
-      "public_repos": 1,
-      "repos_contributed_to": 2,
+      "public_repos": 2,
+      "repos_contributed_to": 3,
       "top_languages": [],
-      "score": 62,
+      "score": 68,
       "github_url": "https://github.com/Perera-KD",
-      "rank": 17
+      "rank": 20
     },
     {
-      "login": "Dhanushka11222",
-      "name": "Dhanushka Maduranga",
-      "avatar_url": "https://avatars.githubusercontent.com/u/138849605?u=00f446cb274bcbbbf2d5e40f3ac48198a032df53&v=4",
-      "bio": "Software Engineering Student  \r\nFocused on building practical and reliable software solutions.  \r\nAlways learning and improving.",
+      "login": "subatheesan-k",
+      "name": "Subatheesan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/138314993?v=4",
+      "bio": "",
       "company": "",
       "website": "",
-      "location": "",
-      "followers": 0,
-      "commits_this_year": 3,
+      "location": "Sri Lanka",
+      "followers": 1,
+      "commits_this_year": 11,
       "prs_this_year": 1,
       "issues_this_year": 0,
       "total_stars": 0,
-      "public_repos": 1,
-      "repos_contributed_to": 2,
-      "top_languages": [],
-      "score": 14,
-      "github_url": "https://github.com/Dhanushka11222",
-      "rank": 18
+      "public_repos": 9,
+      "repos_contributed_to": 3,
+      "top_languages": [
+        "PHP",
+        "Python",
+        "JavaScript"
+      ],
+      "score": 39,
+      "github_url": "https://github.com/subatheesan-k",
+      "rank": 21
     },
     {
       "login": "SLUICEPRJCT",
@@ -446,7 +522,7 @@
       ],
       "score": 1,
       "github_url": "https://github.com/SLUICEPRJCT",
-      "rank": 19
+      "rank": 22
     },
     {
       "login": "prasadrandombage",
@@ -468,7 +544,7 @@
       ],
       "score": 0,
       "github_url": "https://github.com/prasadrandombage",
-      "rank": 20
+      "rank": 23
     },
     {
       "login": "mihos",
@@ -488,7 +564,7 @@
       "top_languages": [],
       "score": 0,
       "github_url": "https://github.com/mihos",
-      "rank": 21
+      "rank": 24
     }
   ]
 }
