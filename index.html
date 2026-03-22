@@ -721,39 +721,49 @@
   document.getElementById('search').addEventListener('input', sortAndFilter);
 
   function openModal(login) {
-    const user = allUsers.find(u => u.login === login);
-    if (!user) return;
+    const userIndex = allUsers.findIndex(u => u.login === login);
+    if (userIndex === -1) return;
+    const user = allUsers[userIndex];
+    
+    // Compare against the person exactly one rank above them
+    const targetUser = userIndex > 0 ? allUsers[userIndex - 1] : user;
+    const pct = (val, target) => target === 0 ? 100 : Math.min(100, (val / target) * 100);
     
     document.getElementById('modal-content').innerHTML = `
       <div class="modal-header">
         <img class="modal-avatar" src="${user.avatar_url}" alt="${user.login}">
         <div>
-          <div class="modal-name">${user.name || user.login}</div>
-          <div class="modal-login">@${user.login}</div>
-        </div>
-      </div>
-      ${user.bio ? `<div class="modal-bio">${user.bio}</div>` : ''}
+          <div class="modal-n      ${user.bio ? `<div class="modal-bio">${user.bio}</div>` : ''}
       <div class="modal-meta">
-        ${user.company ? `<div class="modal-meta-item">🏢 ${user.company}</div>` : ''}
-        ${user.location ? `<div class="modal-meta-item">📍 ${user.location}</div>` : ''}
-        ${user.website ? `<div class="modal-meta-item">🔗 <a href="${user.website.startsWith('http') ? user.website : 'https://'+user.website}" target="_blank" style="color:var(--accent); text-decoration:none;">Website</a></div>` : ''}
+        ${user.company ? `<div class="modal-meta-item">${user.company}</div>` : ''}
+        ${user.location ? `<div class="modal-meta-item">${user.location}</div>` : ''}
+        ${user.website ? `<div class="modal-meta-item"><a href="${user.website.startsWith('http') ? user.website : 'https://'+user.website}" target="_blank" style="color:var(--accent); text-decoration:none;">Website</a></div>` : ''}
       </div>
       
+      <div class="metric-row" style="margin-bottom: 24px;">
+        <div style="font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase;">
+          ${userIndex > 0 ? `Chasing #${targetUser.rank} (@${targetUser.login})` : '#1 Leader'}
+        </div>
+      </div>
+
       <div class="metric-row">
-        <div class="metric-top"><span>Score</span><span class="metric-val" style="color:var(--accent)">${fmt(user.score)}</span></div>
-        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${(user.score / maxMetrics.score) * 100}%"></div></div>
+        <div class="metric-top"><span>Score</span><span><span class="metric-val" style="color:var(--accent)">${fmt(user.score)}</span><span style="color:var(--muted); font-weight:normal;"> / ${fmt(targetUser.score)}</span></span></div>
+        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${pct(user.score, targetUser.score)}%"></div></div>
       </div>
       <div class="metric-row">
-        <div class="metric-top"><span>Commits</span><span class="metric-val">${fmt(user.commits_this_year)}</span></div>
-        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${(user.commits_this_year / maxMetrics.commits) * 100}%; background: var(--accent2)"></div></div>
+        <div class="metric-top"><span>Commits</span><span><span class="metric-val">${fmt(user.commits_this_year)}</span><span style="color:var(--muted); font-weight:normal;"> / ${fmt(targetUser.commits_this_year)}</span></span></div>
+        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${pct(user.commits_this_year, targetUser.commits_this_year)}%; background: var(--accent2)"></div></div>
       </div>
       <div class="metric-row">
-        <div class="metric-top"><span>Pull Requests</span><span class="metric-val">${fmt(user.prs_this_year)}</span></div>
-        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${(user.prs_this_year / maxMetrics.prs) * 100}%; background: var(--gold)"></div></div>
+        <div class="metric-top"><span>Pull Requests</span><span><span class="metric-val">${fmt(user.prs_this_year)}</span><span style="color:var(--muted); font-weight:normal;"> / ${fmt(targetUser.prs_this_year)}</span></span></div>
+        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${pct(user.prs_this_year, targetUser.prs_this_year)}%; background: var(--gold)"></div></div>
       </div>
       <div class="metric-row">
-        <div class="metric-top"><span>Stars</span><span class="metric-val">${fmt(user.total_stars)}</span></div>
-        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${(user.total_stars / maxMetrics.stars) * 100}%; background: var(--green)"></div></div>
+        <div class="metric-top"><span>Stars</span><span><span class="metric-val">${fmt(user.total_stars)}</span><span style="color:var(--muted); font-weight:normal;"> / ${fmt(targetUser.total_stars)}</span></span></div>
+        <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: ${pct(user.total_stars, targetUser.total_stars)}%; background: var(--green)"></div></div>
+      </div>
+      
+      <a href="${user.github_url}" target="_blank" class="modal-btn">View on GitHub</a>d: var(--green)"></div></div>
       </div>
       
       <a href="${user.github_url}" target="_blank" class="modal-btn">View on GitHub</a>
