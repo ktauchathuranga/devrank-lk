@@ -22,13 +22,25 @@ A weekly-updated leaderboard of Sri Lankan GitHub developers, ranked by open-sou
 
 ## Ranking Score
 
-Developers are ranked by a composite score:
+Developers are ranked by a composite score normalized to a **0–1000 scale** — the top developer always scores **1000**, and everyone else is scaled proportionally.
 
+**Step 1 — Raw weighted score:**
 ```
-score = (commits × 3) + (PRs × 5) + (issues × 2) + (stars × 4) + (followers × 1)
+raw = (commits × 3) + (PRs × 5) + (issues × 2) + (stars × 4) + (followers × 1)
 ```
 
-All metrics are based on the **past 12 months** of activity.
+**Step 2 — Normalize to 0–1000:**
+```
+score = round((raw / max_raw) × 1000)
+```
+
+| Metric | Weight | Notes |
+|--------|--------|-------|
+| Commits | × 3 | Current contribution year |
+| Pull Requests | × 5 | Highest weight — collaboration matters most |
+| Issues | × 2 | Community engagement |
+| Stars | × 4 | Lifetime total across public repos |
+| Followers | × 1 | Lowest weight |
 
 ---
 

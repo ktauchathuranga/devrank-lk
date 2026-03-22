@@ -140,11 +140,13 @@ def main():
             rankings.append(stats)
         time.sleep(0.5)  # be gentle with the API
 
-    # Sort by score descending
+    # Sort by raw score descending
     rankings.sort(key=lambda x: x["score"], reverse=True)
 
-    # Add rank numbers
+    # Normalize scores to 0–1000 (top scorer = 1000)
+    max_score = rankings[0]["score"] if rankings else 1
     for i, user in enumerate(rankings):
+        user["score"] = round((user["score"] / max_score) * 1000)
         user["rank"] = i + 1
 
     output = {
@@ -157,7 +159,7 @@ def main():
     with open(out_path, "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"\n✅ Done! {len(rankings)} users ranked. Saved to data/rankings.json")
+    print(f"\nDone! {len(rankings)} users ranked. Saved to data/rankings.json")
 
 
 if __name__ == "__main__":
