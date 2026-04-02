@@ -40,7 +40,7 @@ jobs:
 
           def set_output(name, value):
               with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
-                  fh.write(f"{name}<<__OUT__\\n{value}\\n__OUT__\\n")
+                fh.write(f"{name}<<__OUT__\n{value}\n__OUT__\n")
 
           event_name = os.environ["GITHUB_EVENT_NAME"]
           with open(os.environ["GITHUB_EVENT_PATH"], "r", encoding="utf-8") as f:
@@ -60,7 +60,7 @@ jobs:
               issue_url = issue.get("html_url", "")
 
               def extract_section(heading):
-                  pattern = rf"^###\\s+{re.escape(heading)}\\s*\\n(.*?)(?=^###\\s+|\\Z)"
+                  pattern = rf"^###\s+{re.escape(heading)}\s*\n(.*?)(?=^###\s+|\Z)"
                   match = re.search(pattern, body, flags=re.M | re.S)
                   if not match:
                       return ""
@@ -109,9 +109,9 @@ jobs:
 
           source_line = f"- Source issue: #{issue_number}" if issue_number else "- Source: workflow_dispatch"
           note_line = f"- Optional note: {note}" if note else "- Optional note: (none)"
-          close_line = f"\\nCloses #{issue_number}" if issue_number else ""
+          close_line = f"\nCloses #{issue_number}" if issue_number else ""
 
-          pr_body = "\\n".join([
+          pr_body = "\n".join([
               "Automated user submission.",
               "",
               source_line,
@@ -183,7 +183,7 @@ jobs:
 
           def set_output(name, value):
               with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
-                  fh.write(f"{name}={value}\\n")
+                fh.write(f"{name}={value}\n")
 
           path = "data/users.json"
           username = os.environ["USERNAME"].strip()
@@ -225,9 +225,9 @@ jobs:
 
           before_close = trimmed[:-1].rstrip()
           if before_close.endswith("["):
-              updated = f"[\\n  {new_entry}\\n]\\n"
+              updated = f"[\n  {new_entry}\n]\n"
           else:
-              updated = f"{before_close},\\n  {new_entry}\\n]\\n"
+              updated = f"{before_close},\n  {new_entry}\n]\n"
 
           with open(path, "w", encoding="utf-8") as f:
               f.write(updated)
