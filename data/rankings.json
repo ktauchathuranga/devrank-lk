@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T08:00:55.938793+00:00",
+  "generated_at": "2026-04-05T00:41:32.339186+00:00",
   "total_users": 27,
   "rankings": [
     {
@@ -10,17 +10,17 @@
       "company": "@zone24x7",
       "website": "https://sameerasw.com",
       "location": "Sri Lanka",
-      "followers": 508,
-      "commits_this_year": 6516,
+      "followers": 512,
+      "commits_this_year": 6528,
       "prs_this_year": 258,
       "issues_this_year": 102,
-      "total_stars": 3885,
-      "public_repos": 80,
-      "repos_contributed_to": 40,
+      "total_stars": 3912,
+      "public_repos": 81,
+      "repos_contributed_to": 41,
       "top_languages": [
+        "Kotlin",
         "Swift",
-        "Java",
-        "Kotlin"
+        "Java"
       ],
       "location_verified": true,
       "score": 1000,
@@ -40,7 +40,7 @@
       "followers": 27,
       "commits_this_year": 1403,
       "prs_this_year": 135,
-      "issues_this_year": 183,
+      "issues_this_year": 184,
       "total_stars": 68,
       "public_repos": 68,
       "repos_contributed_to": 48,
@@ -50,10 +50,10 @@
         "Shell"
       ],
       "location_verified": true,
-      "score": 150,
+      "score": 149,
       "github_url": "https://github.com/ktauchathuranga",
       "rank": 2,
-      "previous_score": 149,
+      "previous_score": 150,
       "previous_rank": 2
     },
     {
@@ -65,22 +65,22 @@
       "website": "https://lahirunirmalx.netlify.app/",
       "location": "Colombo,Srilanka",
       "followers": 7,
-      "commits_this_year": 799,
-      "prs_this_year": 360,
+      "commits_this_year": 923,
+      "prs_this_year": 425,
       "issues_this_year": 1,
       "total_stars": 43,
-      "public_repos": 40,
-      "repos_contributed_to": 25,
+      "public_repos": 41,
+      "repos_contributed_to": 26,
       "top_languages": [
         "C++",
         "TypeScript",
-        "PHP"
+        "C"
       ],
       "location_verified": true,
-      "score": 118,
+      "score": 136,
       "github_url": "https://github.com/lahirunirmalx",
       "rank": 3,
-      "previous_score": 112,
+      "previous_score": 118,
       "previous_rank": 3
     },
     {
@@ -92,19 +92,19 @@
       "website": "https://minokainduwara.fwh.is",
       "location": "Kegalle",
       "followers": 24,
-      "commits_this_year": 490,
+      "commits_this_year": 506,
       "prs_this_year": 47,
       "issues_this_year": 36,
       "total_stars": 110,
-      "public_repos": 55,
-      "repos_contributed_to": 42,
+      "public_repos": 56,
+      "repos_contributed_to": 43,
       "top_languages": [
         "Java",
         "C++",
-        "HTML"
+        "JavaScript"
       ],
       "location_verified": true,
-      "score": 60,
+      "score": 61,
       "github_url": "https://github.com/Minokainduwara",
       "rank": 4,
       "previous_score": 60,
@@ -119,10 +119,10 @@
       "website": "",
       "location": "",
       "followers": 9,
-      "commits_this_year": 415,
+      "commits_this_year": 416,
       "prs_this_year": 76,
       "issues_this_year": 4,
-      "total_stars": 19,
+      "total_stars": 20,
       "public_repos": 32,
       "repos_contributed_to": 32,
       "top_languages": [
@@ -146,7 +146,7 @@
       "website": "",
       "location": "Sri Lanka",
       "followers": 13,
-      "commits_this_year": 430,
+      "commits_this_year": 431,
       "prs_this_year": 59,
       "issues_this_year": 10,
       "total_stars": 25,
@@ -200,8 +200,8 @@
       "website": "",
       "location": "",
       "followers": 6,
-      "commits_this_year": 449,
-      "prs_this_year": 38,
+      "commits_this_year": 451,
+      "prs_this_year": 39,
       "issues_this_year": 1,
       "total_stars": 10,
       "public_repos": 36,
@@ -227,12 +227,12 @@
       "website": "https://mohamedsharfan.github.io/myPortfolio/",
       "location": "kandy",
       "followers": 3,
-      "commits_this_year": 320,
+      "commits_this_year": 324,
       "prs_this_year": 43,
       "issues_this_year": 9,
       "total_stars": 3,
-      "public_repos": 25,
-      "repos_contributed_to": 27,
+      "public_repos": 26,
+      "repos_contributed_to": 28,
       "top_languages": [
         "Python",
         "JavaScript",
@@ -242,7 +242,7 @@
       "score": 33,
       "github_url": "https://github.com/MohamedSharfan",
       "rank": 9,
-      "previous_score": 32,
+      "previous_score": 33,
       "previous_rank": 9
     },
     {
@@ -254,19 +254,19 @@
       "website": "https://bdhamithkumara.dev",
       "location": "Sri Lanka",
       "followers": 58,
-      "commits_this_year": 249,
+      "commits_this_year": 281,
       "prs_this_year": 18,
       "issues_this_year": 15,
       "total_stars": 36,
-      "public_repos": 217,
-      "repos_contributed_to": 35,
+      "public_repos": 218,
+      "repos_contributed_to": 36,
       "top_languages": [
         "JavaScript",
         "TypeScript",
         "CSS"
       ],
       "location_verified": true,
-      "score": 29,
+      "score": 31,
       "github_url": "https://github.com/bdhamithkumara",
       "rank": 10,
       "previous_score": 29,
@@ -281,7 +281,7 @@
       "website": "",
       "location": "matara",
       "followers": 9,
-      "commits_this_year": 208,
+      "commits_this_year": 214,
       "prs_this_year": 52,
       "issues_this_year": 0,
       "total_stars": 22,
@@ -293,7 +293,7 @@
         "Java"
       ],
       "location_verified": true,
-      "score": 26,
+      "score": 27,
       "github_url": "https://github.com/ishansivmal",
       "rank": 11,
       "previous_score": 26,
@@ -309,7 +309,7 @@
       "location": "",
       "followers": 1,
       "commits_this_year": 231,
-      "prs_this_year": 37,
+      "prs_this_year": 39,
       "issues_this_year": 0,
       "total_stars": 2,
       "public_repos": 20,
@@ -408,6 +408,33 @@
       "previous_rank": 15
     },
     {
+      "login": "vipooshanb",
+      "name": "Balachandran Vipooshan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/192961646?u=419f3ade744444feef5c29a4ba931a4bcf0dc754&v=4",
+      "bio": "Building Mozhii AI | BSc (Hons) Computer Science Undergraduate | Informatics institute of technology | University of Westminster",
+      "company": "",
+      "website": "vipooshan.me",
+      "location": "Moratuwa, Colombo",
+      "followers": 10,
+      "commits_this_year": 156,
+      "prs_this_year": 5,
+      "issues_this_year": 0,
+      "total_stars": 3,
+      "public_repos": 10,
+      "repos_contributed_to": 12,
+      "top_languages": [
+        "Python",
+        "HTML",
+        "JavaScript"
+      ],
+      "location_verified": true,
+      "score": 14,
+      "github_url": "https://github.com/vipooshanb",
+      "rank": 16,
+      "previous_score": 13,
+      "previous_rank": 17
+    },
+    {
       "login": "Bl4ke100",
       "name": "Blake",
       "avatar_url": "https://avatars.githubusercontent.com/u/165447799?u=23c230a92e17af8e42e40ad5d00bf6935f965226&v=4",
@@ -416,7 +443,7 @@
       "website": "",
       "location": "",
       "followers": 7,
-      "commits_this_year": 145,
+      "commits_this_year": 148,
       "prs_this_year": 10,
       "issues_this_year": 1,
       "total_stars": 0,
@@ -428,38 +455,11 @@
         "TypeScript"
       ],
       "location_verified": false,
-      "score": 13,
+      "score": 14,
       "github_url": "https://github.com/Bl4ke100",
-      "rank": 16,
+      "rank": 17,
       "previous_score": 13,
       "previous_rank": 16
-    },
-    {
-      "login": "vipooshanb",
-      "name": "Balachandran Vipooshan",
-      "avatar_url": "https://avatars.githubusercontent.com/u/192961646?u=419f3ade744444feef5c29a4ba931a4bcf0dc754&v=4",
-      "bio": "Building Mozhii AI | BSc (Hons) Computer Science Undergraduate | Informatics institute of technology | University of Westminster",
-      "company": "",
-      "website": "vipooshan.me",
-      "location": "Moratuwa, Colombo",
-      "followers": 10,
-      "commits_this_year": 142,
-      "prs_this_year": 8,
-      "issues_this_year": 0,
-      "total_stars": 3,
-      "public_repos": 10,
-      "repos_contributed_to": 13,
-      "top_languages": [
-        "Python",
-        "HTML",
-        "JavaScript"
-      ],
-      "location_verified": true,
-      "score": 13,
-      "github_url": "https://github.com/vipooshanb",
-      "rank": 17,
-      "previous_score": null,
-      "previous_rank": null
     },
     {
       "login": "randil-h",
@@ -486,7 +486,7 @@
       "github_url": "https://github.com/randil-h",
       "rank": 18,
       "previous_score": 12,
-      "previous_rank": 17
+      "previous_rank": 18
     },
     {
       "login": "chapayev0",
@@ -509,11 +509,11 @@
         "JavaScript"
       ],
       "location_verified": false,
-      "score": 12,
+      "score": 11,
       "github_url": "https://github.com/chapayev0",
       "rank": 19,
       "previous_score": 12,
-      "previous_rank": 18
+      "previous_rank": 19
     },
     {
       "login": "abdrhxyii",
@@ -540,7 +540,7 @@
       "github_url": "https://github.com/abdrhxyii",
       "rank": 20,
       "previous_score": 5,
-      "previous_rank": 19
+      "previous_rank": 20
     },
     {
       "login": "AKMJafran",
@@ -551,23 +551,23 @@
       "website": "",
       "location": "",
       "followers": 1,
-      "commits_this_year": 31,
+      "commits_this_year": 44,
       "prs_this_year": 4,
-      "issues_this_year": 1,
+      "issues_this_year": 2,
       "total_stars": 0,
-      "public_repos": 12,
-      "repos_contributed_to": 6,
+      "public_repos": 13,
+      "repos_contributed_to": 7,
       "top_languages": [
         "HTML",
         "Java",
         "CSS"
       ],
       "location_verified": false,
-      "score": 3,
+      "score": 4,
       "github_url": "https://github.com/AKMJafran",
       "rank": 21,
       "previous_score": 3,
-      "previous_rank": 20
+      "previous_rank": 21
     },
     {
       "login": "dhanushka-sys",
@@ -592,7 +592,7 @@
       "github_url": "https://github.com/dhanushka-sys",
       "rank": 22,
       "previous_score": 2,
-      "previous_rank": 21
+      "previous_rank": 22
     },
     {
       "login": "Perera-KD",
@@ -615,7 +615,7 @@
       "github_url": "https://github.com/Perera-KD",
       "rank": 23,
       "previous_score": 2,
-      "previous_rank": 22
+      "previous_rank": 23
     },
     {
       "login": "subatheesan-k",
@@ -642,7 +642,7 @@
       "github_url": "https://github.com/subatheesan-k",
       "rank": 24,
       "previous_score": 1,
-      "previous_rank": 23
+      "previous_rank": 24
     },
     {
       "login": "SLUICEPRJCT",
@@ -667,7 +667,7 @@
       "github_url": "https://github.com/SLUICEPRJCT",
       "rank": 25,
       "previous_score": 0,
-      "previous_rank": 24
+      "previous_rank": 25
     },
     {
       "login": "prasadrandombage",
@@ -692,7 +692,7 @@
       "github_url": "https://github.com/prasadrandombage",
       "rank": 26,
       "previous_score": 0,
-      "previous_rank": 25
+      "previous_rank": 26
     },
     {
       "login": "mihos",
@@ -715,7 +715,7 @@
       "github_url": "https://github.com/mihos",
       "rank": 27,
       "previous_score": 0,
-      "previous_rank": 26
+      "previous_rank": 27
     }
   ]
 }
