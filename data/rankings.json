@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T00:53:34.639803+00:00",
+  "generated_at": "2026-05-10T06:37:38.447077+00:00",
   "total_users": 28,
   "rankings": [
     {
@@ -12,9 +12,11 @@
       "location": "Sri Lanka",
       "followers": 567,
       "commits_this_year": 7359,
+      "raw_commits_this_year": 7359,
+      "ignored_repos": [],
       "prs_this_year": 303,
       "issues_this_year": 93,
-      "total_stars": 4316,
+      "total_stars": 4317,
       "public_repos": 83,
       "repos_contributed_to": 41,
       "top_languages": [
@@ -38,8 +40,16 @@
       "website": "https://lahirunirmalx.netlify.app/",
       "location": "Colombo,Srilanka",
       "followers": 7,
-      "commits_this_year": 2569,
-      "prs_this_year": 1264,
+      "commits_this_year": 182,
+      "raw_commits_this_year": 2591,
+      "ignored_repos": [
+        {
+          "full_name": "lahirunirmalx/epoch-calculator",
+          "reason": "Automated epoch-based commits (suspicious auto-commit script)",
+          "commits": 2409
+        }
+      ],
+      "prs_this_year": 1270,
       "issues_this_year": 1,
       "total_stars": 43,
       "public_repos": 43,
@@ -50,10 +60,10 @@
         "TypeScript"
       ],
       "location_verified": true,
-      "score": 341,
+      "score": 170,
       "github_url": "https://github.com/lahirunirmalx",
       "rank": 2,
-      "previous_score": 301,
+      "previous_score": 341,
       "previous_rank": 2
     },
     {
@@ -65,7 +75,9 @@
       "website": "https://ktauchathuranga.github.io",
       "location": "Sri Lanka",
       "followers": 31,
-      "commits_this_year": 1369,
+      "commits_this_year": 1371,
+      "raw_commits_this_year": 1371,
+      "ignored_repos": [],
       "prs_this_year": 115,
       "issues_this_year": 166,
       "total_stars": 96,
@@ -77,10 +89,10 @@
         "Python"
       ],
       "location_verified": true,
-      "score": 130,
+      "score": 131,
       "github_url": "https://github.com/ktauchathuranga",
       "rank": 3,
-      "previous_score": 135,
+      "previous_score": 130,
       "previous_rank": 3
     },
     {
@@ -93,6 +105,8 @@
       "location": "Sri Lanka",
       "followers": 41,
       "commits_this_year": 717,
+      "raw_commits_this_year": 717,
+      "ignored_repos": [],
       "prs_this_year": 77,
       "issues_this_year": 28,
       "total_stars": 116,
@@ -107,7 +121,7 @@
       "score": 74,
       "github_url": "https://github.com/Minokainduwara",
       "rank": 4,
-      "previous_score": 73,
+      "previous_score": 74,
       "previous_rank": 4
     },
     {
@@ -120,6 +134,8 @@
       "location": "",
       "followers": 11,
       "commits_this_year": 527,
+      "raw_commits_this_year": 527,
+      "ignored_repos": [],
       "prs_this_year": 76,
       "issues_this_year": 12,
       "total_stars": 20,
@@ -134,7 +150,36 @@
       "score": 50,
       "github_url": "https://github.com/dilushamadushan",
       "rank": 5,
-      "previous_score": 39,
+      "previous_score": 50,
+      "previous_rank": 5
+    },
+    {
+      "login": "Pasindu-Jayasundara",
+      "name": "Pasindu Jayasundara ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/158612501?u=f8c2d135f3a85a3102684f455cbe68097072970d&v=4",
+      "bio": "",
+      "company": "",
+      "website": "",
+      "location": "Sri Lanka",
+      "followers": 13,
+      "commits_this_year": 441,
+      "raw_commits_this_year": 441,
+      "ignored_repos": [],
+      "prs_this_year": 79,
+      "issues_this_year": 11,
+      "total_stars": 25,
+      "public_repos": 89,
+      "repos_contributed_to": 31,
+      "top_languages": [
+        "Java",
+        "JavaScript",
+        "HTML"
+      ],
+      "location_verified": true,
+      "score": 45,
+      "github_url": "https://github.com/Pasindu-Jayasundara",
+      "rank": 6,
+      "previous_score": 44,
       "previous_rank": 7
     },
     {
@@ -147,7 +192,9 @@
       "location": "",
       "followers": 4,
       "commits_this_year": 409,
-      "prs_this_year": 101,
+      "raw_commits_this_year": 409,
+      "ignored_repos": [],
+      "prs_this_year": 102,
       "issues_this_year": 41,
       "total_stars": 6,
       "public_repos": 15,
@@ -160,36 +207,9 @@
       "location_verified": false,
       "score": 44,
       "github_url": "https://github.com/Dineshs737",
-      "rank": 6,
-      "previous_score": 41,
-      "previous_rank": 6
-    },
-    {
-      "login": "Pasindu-Jayasundara",
-      "name": "Pasindu Jayasundara ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/158612501?u=f8c2d135f3a85a3102684f455cbe68097072970d&v=4",
-      "bio": "",
-      "company": "",
-      "website": "",
-      "location": "Sri Lanka",
-      "followers": 13,
-      "commits_this_year": 439,
-      "prs_this_year": 78,
-      "issues_this_year": 11,
-      "total_stars": 25,
-      "public_repos": 89,
-      "repos_contributed_to": 31,
-      "top_languages": [
-        "Java",
-        "JavaScript",
-        "HTML"
-      ],
-      "location_verified": true,
-      "score": 44,
-      "github_url": "https://github.com/Pasindu-Jayasundara",
       "rank": 7,
-      "previous_score": 43,
-      "previous_rank": 5
+      "previous_score": 44,
+      "previous_rank": 6
     },
     {
       "login": "Mohamed-Irfan-git",
@@ -201,6 +221,8 @@
       "location": "",
       "followers": 6,
       "commits_this_year": 474,
+      "raw_commits_this_year": 474,
+      "ignored_repos": [],
       "prs_this_year": 35,
       "issues_this_year": 1,
       "total_stars": 10,
@@ -215,7 +237,7 @@
       "score": 40,
       "github_url": "https://github.com/Mohamed-Irfan-git",
       "rank": 8,
-      "previous_score": 38,
+      "previous_score": 40,
       "previous_rank": 8
     },
     {
@@ -228,6 +250,8 @@
       "location": "",
       "followers": 1,
       "commits_this_year": 372,
+      "raw_commits_this_year": 372,
+      "ignored_repos": [],
       "prs_this_year": 58,
       "issues_this_year": 0,
       "total_stars": 2,
@@ -255,6 +279,8 @@
       "location": "",
       "followers": 3,
       "commits_this_year": 250,
+      "raw_commits_this_year": 250,
+      "ignored_repos": [],
       "prs_this_year": 109,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -269,7 +295,7 @@
       "score": 31,
       "github_url": "https://github.com/Manupriya144",
       "rank": 10,
-      "previous_score": 30,
+      "previous_score": 31,
       "previous_rank": 10
     },
     {
@@ -282,6 +308,8 @@
       "location": "matara",
       "followers": 10,
       "commits_this_year": 283,
+      "raw_commits_this_year": 283,
+      "ignored_repos": [],
       "prs_this_year": 66,
       "issues_this_year": 2,
       "total_stars": 22,
@@ -296,8 +324,8 @@
       "score": 31,
       "github_url": "https://github.com/ishansivmal",
       "rank": 11,
-      "previous_score": 25,
-      "previous_rank": 13
+      "previous_score": 31,
+      "previous_rank": 11
     },
     {
       "login": "MohamedSharfan",
@@ -309,6 +337,8 @@
       "location": "kandy",
       "followers": 4,
       "commits_this_year": 330,
+      "raw_commits_this_year": 330,
+      "ignored_repos": [],
       "prs_this_year": 45,
       "issues_this_year": 9,
       "total_stars": 3,
@@ -324,7 +354,7 @@
       "github_url": "https://github.com/MohamedSharfan",
       "rank": 12,
       "previous_score": 30,
-      "previous_rank": 11
+      "previous_rank": 12
     },
     {
       "login": "bdhamithkumara",
@@ -336,6 +366,8 @@
       "location": "Sri Lanka",
       "followers": 60,
       "commits_this_year": 242,
+      "raw_commits_this_year": 242,
+      "ignored_repos": [],
       "prs_this_year": 17,
       "issues_this_year": 15,
       "total_stars": 36,
@@ -350,8 +382,8 @@
       "score": 25,
       "github_url": "https://github.com/bdhamithkumara",
       "rank": 13,
-      "previous_score": 27,
-      "previous_rank": 12
+      "previous_score": 25,
+      "previous_rank": 13
     },
     {
       "login": "RasheedhulMuneer1",
@@ -363,6 +395,8 @@
       "location": "",
       "followers": 1,
       "commits_this_year": 273,
+      "raw_commits_this_year": 273,
+      "ignored_repos": [],
       "prs_this_year": 1,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -390,6 +424,8 @@
       "location": "",
       "followers": 9,
       "commits_this_year": 224,
+      "raw_commits_this_year": 224,
+      "ignored_repos": [],
       "prs_this_year": 13,
       "issues_this_year": 1,
       "total_stars": 0,
@@ -417,6 +453,8 @@
       "location": "Sri Lanka",
       "followers": 17,
       "commits_this_year": 196,
+      "raw_commits_this_year": 196,
+      "ignored_repos": [],
       "prs_this_year": 12,
       "issues_this_year": 1,
       "total_stars": 0,
@@ -431,7 +469,7 @@
       "score": 16,
       "github_url": "https://github.com/bl4ckf0xk",
       "rank": 16,
-      "previous_score": 17,
+      "previous_score": 16,
       "previous_rank": 16
     },
     {
@@ -444,6 +482,8 @@
       "location": "Sri Lanka",
       "followers": 19,
       "commits_this_year": 104,
+      "raw_commits_this_year": 104,
+      "ignored_repos": [],
       "prs_this_year": 12,
       "issues_this_year": 5,
       "total_stars": 24,
@@ -458,7 +498,7 @@
       "score": 12,
       "github_url": "https://github.com/thidaskaveesha",
       "rank": 17,
-      "previous_score": 11,
+      "previous_score": 12,
       "previous_rank": 17
     },
     {
@@ -471,6 +511,8 @@
       "location": "Moratuwa, Colombo",
       "followers": 13,
       "commits_this_year": 133,
+      "raw_commits_this_year": 133,
+      "ignored_repos": [],
       "prs_this_year": 8,
       "issues_this_year": 0,
       "total_stars": 3,
@@ -498,6 +540,8 @@
       "location": "",
       "followers": 1,
       "commits_this_year": 81,
+      "raw_commits_this_year": 81,
+      "ignored_repos": [],
       "prs_this_year": 27,
       "issues_this_year": 1,
       "total_stars": 0,
@@ -513,7 +557,7 @@
       "github_url": "https://github.com/razim2003",
       "rank": 19,
       "previous_score": 9,
-      "previous_rank": 20
+      "previous_rank": 19
     },
     {
       "login": "randil-h",
@@ -525,6 +569,8 @@
       "location": "",
       "followers": 7,
       "commits_this_year": 106,
+      "raw_commits_this_year": 106,
+      "ignored_repos": [],
       "prs_this_year": 3,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -539,8 +585,8 @@
       "score": 8,
       "github_url": "https://github.com/randil-h",
       "rank": 20,
-      "previous_score": 10,
-      "previous_rank": 19
+      "previous_score": 8,
+      "previous_rank": 20
     },
     {
       "login": "AKMJafran",
@@ -552,6 +598,8 @@
       "location": "",
       "followers": 1,
       "commits_this_year": 72,
+      "raw_commits_this_year": 72,
+      "ignored_repos": [],
       "prs_this_year": 4,
       "issues_this_year": 15,
       "total_stars": 0,
@@ -566,7 +614,7 @@
       "score": 6,
       "github_url": "https://github.com/AKMJafran",
       "rank": 21,
-      "previous_score": 7,
+      "previous_score": 6,
       "previous_rank": 21
     },
     {
@@ -579,6 +627,8 @@
       "location": "Sri Lanka",
       "followers": 25,
       "commits_this_year": 27,
+      "raw_commits_this_year": 27,
+      "ignored_repos": [],
       "prs_this_year": 8,
       "issues_this_year": 2,
       "total_stars": 7,
@@ -606,6 +656,8 @@
       "location": "",
       "followers": 0,
       "commits_this_year": 24,
+      "raw_commits_this_year": 24,
+      "ignored_repos": [],
       "prs_this_year": 2,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -631,6 +683,8 @@
       "location": "",
       "followers": 0,
       "commits_this_year": 21,
+      "raw_commits_this_year": 21,
+      "ignored_repos": [],
       "prs_this_year": 1,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -654,6 +708,8 @@
       "location": "Sri Lanka",
       "followers": 1,
       "commits_this_year": 7,
+      "raw_commits_this_year": 7,
+      "ignored_repos": [],
       "prs_this_year": 1,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -681,6 +737,8 @@
       "location": "",
       "followers": 1,
       "commits_this_year": 0,
+      "raw_commits_this_year": 0,
+      "ignored_repos": [],
       "prs_this_year": 0,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -706,6 +764,8 @@
       "location": "",
       "followers": 0,
       "commits_this_year": 0,
+      "raw_commits_this_year": 0,
+      "ignored_repos": [],
       "prs_this_year": 0,
       "issues_this_year": 0,
       "total_stars": 0,
@@ -731,6 +791,8 @@
       "location": "Sri Lanka",
       "followers": 0,
       "commits_this_year": 0,
+      "raw_commits_this_year": 0,
+      "ignored_repos": [],
       "prs_this_year": 0,
       "issues_this_year": 0,
       "total_stars": 0,
