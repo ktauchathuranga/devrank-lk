@@ -11,38 +11,50 @@ HEADERS = {
 }
 GRAPHQL_URL = "https://api.github.com/graphql"
 
+# Load ignored repos (with reasons) so we can exclude their contributions from scoring
+IGNORED_REPOS_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "ignored_repos.json")
+try:
+    with open(IGNORED_REPOS_PATH, "r") as f:
+        _ignored_list = json.load(f)
+        IGNORED_REPOS = {item["full_name"].lower(): item.get("reason", "") for item in _ignored_list}
+except Exception:
+    IGNORED_REPOS = {}
 # --- GraphQL query to fetch all user stats in one request ---
 USER_QUERY = """
 query($login: String!) {
-  user(login: $login) {
-    login
-    name
-    avatarUrl
-    bio
-    company
-    websiteUrl
-    location
-    followers { totalCount }
-    contributionsCollection {
-      totalCommitContributions
-      totalPullRequestContributions
-      totalIssueContributions
-      totalRepositoriesWithContributedCommits
+    user(login: $login) {
+        login
+        name
+        avatarUrl
+        bio
+        company
+        websiteUrl
+        location
+        followers { totalCount }
+        contributionsCollection {
+            totalCommitContributions
+            totalPullRequestContributions
+            totalIssueContributions
+            totalRepositoriesWithContributedCommits
+            commitContributionsByRepository(maxRepositories: 100) {
+                repository { nameWithOwner }
+                contributions { totalCount }
+            }
+        }
+        repositories(
+            first: 100
+            ownerAffiliations: OWNER
+            isFork: false
+            privacy: PUBLIC
+            orderBy: { field: STARGAZERS, direction: DESC }
+        ) {
+            totalCount
+            nodes {
+                stargazerCount
+                primaryLanguage { name }
+            }
+        }
     }
-    repositories(
-      first: 100
-      ownerAffiliations: OWNER
-      isFork: false
-      privacy: PUBLIC
-      orderBy: { field: STARGAZERS, direction: DESC }
-    ) {
-      totalCount
-      nodes {
-        stargazerCount
-        primaryLanguage { name }
-      }
-    }
-  }
 }
 """
 
@@ -85,6 +97,21 @@ def fetch_user_stats(login):
     contributions = user["contributionsCollection"]
     repos = user["repositories"]["nodes"]
 
+    # Calculate commits per-repository and subtract ignored repos' commits
+    ignored_repos_used = []
+    ignored_commits_total = 0
+    commit_by_repo = contributions.get("commitContributionsByRepository") or []
+    for item in commit_by_repo:
+        repo_full = item.get("repository", {}).get("nameWithOwner", "").lower()
+        cnt = item.get("contributions", {}).get("totalCount", 0)
+        if repo_full in IGNORED_REPOS:
+            ignored_commits_total += cnt
+            ignored_repos_used.append({
+                "full_name": repo_full,
+                "reason": IGNORED_REPOS.get(repo_full, ""),
+                "commits": cnt,
+            })
+
     total_stars = sum(r["stargazerCount"] for r in repos)
 
     # Find top languages
@@ -96,7 +123,8 @@ def fetch_user_stats(login):
     top_languages = sorted(lang_counts, key=lang_counts.get, reverse=True)[:3]
 
     # Composite score: weighted ranking metric
-    commits = contributions["totalCommitContributions"]
+    raw_commits = contributions["totalCommitContributions"]
+    commits = max(0, raw_commits - ignored_commits_total)
     prs = contributions["totalPullRequestContributions"]
     issues = contributions["totalIssueContributions"]
     followers = user["followers"]["totalCount"]
@@ -118,6 +146,8 @@ def fetch_user_stats(login):
         "location": user["location"] or "",
         "followers": followers,
         "commits_this_year": commits,
+        "raw_commits_this_year": raw_commits,
+        "ignored_repos": ignored_repos_used,
         "prs_this_year": prs,
         "issues_this_year": issues,
         "total_stars": total_stars,
