@@ -28,6 +28,22 @@
       --font-mono: 'DM Mono', monospace;
     }
 
+    /* Light theme overrides when documentElement has data-theme="light" */
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e6e9ef;
+      --border-bright: #d1d293;
+      --text: #0b1220;
+      --muted: #5b6678;
+      --accent: #ff6b35;
+      --accent2: #7c3aed;
+      --gold: #b76b04;
+      --silver: #6b7280;
+      --bronze: #8b5a2b;
+      --green: #059669;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -701,6 +717,9 @@
         <span class="line2">Sri Lanka</span>
       </h1>
       <p class="subtitle">Top developers ranked by open-source activity · Updated weekly</p>
+        <div style="margin-top:12px;">
+          <button id="theme-toggle" class="sort-btn" aria-label="Toggle theme" title="Toggle light/dark theme">Toggle theme</button>
+        </div>
 
       <div class="stats-bar" id="stats-bar">
         <div class="stat-item">
@@ -1021,6 +1040,27 @@
         document.getElementById('rankings-list').innerHTML =
           `<div class="empty-state">Failed to load rankings. Try again later.</div>`;
       });
+
+    // Theme toggle: persist in localStorage and apply data-theme on documentElement
+    function applyTheme(theme) {
+      if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      else document.documentElement.removeAttribute('data-theme');
+      const btn = document.getElementById('theme-toggle');
+      if (btn) btn.textContent = theme === 'light' ? 'Light' : 'Dark';
+    }
+
+    function toggleTheme() {
+      const cur = localStorage.getItem('devrank_theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      const next = cur === 'light' ? 'dark' : 'light';
+      localStorage.setItem('devrank_theme', next);
+      applyTheme(next);
+    }
+
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+    // Initialize theme on load
+    const saved = localStorage.getItem('devrank_theme');
+    if (saved) applyTheme(saved);
+    else applyTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   </script>
 </body>
 
