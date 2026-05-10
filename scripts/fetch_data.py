@@ -40,6 +40,10 @@ query($login: String!) {
                 repository { nameWithOwner }
                 contributions { totalCount }
             }
+            pullRequestContributionsByRepository(maxRepositories: 100) {
+                repository { nameWithOwner }
+                contributions { totalCount }
+            }
         }
         repositories(
             first: 100
@@ -97,20 +101,30 @@ def fetch_user_stats(login):
     contributions = user["contributionsCollection"]
     repos = user["repositories"]["nodes"]
 
-    # Calculate commits per-repository and subtract ignored repos' commits
-    ignored_repos_used = []
+    # Calculate per-repository contributions and subtract ignored repos' contributions
+    ignored_repos_used = {}
     ignored_commits_total = 0
+    ignored_prs_total = 0
     commit_by_repo = contributions.get("commitContributionsByRepository") or []
     for item in commit_by_repo:
         repo_full = item.get("repository", {}).get("nameWithOwner", "").lower()
         cnt = item.get("contributions", {}).get("totalCount", 0)
         if repo_full in IGNORED_REPOS:
             ignored_commits_total += cnt
-            ignored_repos_used.append({
-                "full_name": repo_full,
-                "reason": IGNORED_REPOS.get(repo_full, ""),
-                "commits": cnt,
-            })
+            ignored_repos_used.setdefault(repo_full, {"full_name": repo_full, "reason": IGNORED_REPOS.get(repo_full, ""), "commits": 0, "prs": 0})
+            ignored_repos_used[repo_full]["commits"] += cnt
+
+    pr_by_repo = contributions.get("pullRequestContributionsByRepository") or []
+    for item in pr_by_repo:
+        repo_full = item.get("repository", {}).get("nameWithOwner", "").lower()
+        cnt = item.get("contributions", {}).get("totalCount", 0)
+        if repo_full in IGNORED_REPOS:
+            ignored_prs_total += cnt
+            ignored_repos_used.setdefault(repo_full, {"full_name": repo_full, "reason": IGNORED_REPOS.get(repo_full, ""), "commits": 0, "prs": 0})
+            ignored_repos_used[repo_full]["prs"] += cnt
+
+    # convert ignored_repos_used to list
+    ignored_repos_used = list(ignored_repos_used.values())
 
     total_stars = sum(r["stargazerCount"] for r in repos)
 
@@ -125,7 +139,8 @@ def fetch_user_stats(login):
     # Composite score: weighted ranking metric
     raw_commits = contributions["totalCommitContributions"]
     commits = max(0, raw_commits - ignored_commits_total)
-    prs = contributions["totalPullRequestContributions"]
+    raw_prs = contributions["totalPullRequestContributions"]
+    prs = max(0, raw_prs - ignored_prs_total)
     issues = contributions["totalIssueContributions"]
     followers = user["followers"]["totalCount"]
     score = (commits * 3) + (prs * 5) + (issues * 2) + (total_stars * 4) + (followers * 1)
@@ -147,8 +162,10 @@ def fetch_user_stats(login):
         "followers": followers,
         "commits_this_year": commits,
         "raw_commits_this_year": raw_commits,
-        "ignored_repos": ignored_repos_used,
         "prs_this_year": prs,
+        "raw_prs_this_year": raw_prs,
+        "ignored_repos": ignored_repos_used,
+        
         "issues_this_year": issues,
         "total_stars": total_stars,
         "public_repos": user["repositories"]["totalCount"],
