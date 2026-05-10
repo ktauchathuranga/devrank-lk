@@ -220,6 +220,23 @@
       color: var(--accent);
     }
 
+    /* Theme toggle positioning */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      z-index: 1000;
+    }
+
+    @media (max-width: 680px) {
+      .theme-toggle {
+        top: 12px;
+        right: 12px;
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+    }
+
     /* ── Table header ── */
     .table-header {
       display: grid;
@@ -265,8 +282,12 @@
 
     .user-card:hover {
       border-color: var(--border-bright);
-      background: #15151f;
+      background: rgba(0, 0, 0, 0.05);
       transform: translateX(3px);
+    }
+
+    [data-theme="light"] .user-card:hover {
+      background: rgba(0, 0, 0, 0.06);
     }
 
     /* Top 3 special treatment */
@@ -707,6 +728,7 @@
 </head>
 
 <body>
+  <button id="theme-toggle" class="theme-toggle sort-btn" aria-label="Toggle theme" title="Toggle light/dark theme">Toggle theme</button>
   <div class="wrap">
 
     <!-- Header -->
@@ -717,9 +739,6 @@
         <span class="line2">Sri Lanka</span>
       </h1>
       <p class="subtitle">Top developers ranked by open-source activity · Updated weekly</p>
-        <div style="margin-top:12px;">
-          <button id="theme-toggle" class="sort-btn" aria-label="Toggle theme" title="Toggle light/dark theme">Toggle theme</button>
-        </div>
 
       <div class="stats-bar" id="stats-bar">
         <div class="stat-item">
